@@ -22,15 +22,16 @@ instead of SRRESNET.
 <h1>2. Overview: </h1>
 
 <ul>
-  <li>For training purpose I used CELEBA dataset and COCO dataset</li>
+  <li>For training purpose I used CELEBA dataset and COCO dataset
+  </li>
   <li>Here the low resolution version of its high resolution counter part is obtained by applying a Gaussian filter to High resolution
-    image follwed by a downsampling factor r. For an image with C color channels, we describe Low Resolution image by W * H * C and       high resolution image and generated high resolution image by rW * rH * C. In our case r=4.</li>
-  <li>
+    image follwed by a downsampling factor r. For an image with C color channels, we describe Low Resolution image by W * H * C and       high resolution image and generated high resolution image by rW * rH * C. In our case r=4.
+  </li>
   <li>
     Then the generating network is trained that estimates for a given  LR input image its correspondinng HR counterpart,  whose           parameter is obtained by optimizing a specific loss function mentioned in section 4.
   </li>
   <li>Model was trained on input dimension (3*64*64) and for multiple number of epochs (1000 epoch on CELEBA dataset and more than 1000 epoch on COCO Dataset.)</li>
-  <li>I used Adam optimizer with intial learning rate = 0.0001 and change(reduce) it manually during traing phase</li>
+  <li>I used Adam optimizer with intial learning rate = 0.0001 and change(reduce) it manually during training phase</li>
 </ul>  
 
 <h1>3. Model Architecture:</h1>
