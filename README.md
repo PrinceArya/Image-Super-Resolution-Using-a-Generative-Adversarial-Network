@@ -63,11 +63,28 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <img src="image/disc_loss.jpg">
 <h5>Generator Loss Function</h5>
 <img src="image/gen_loss.jpg">
-<strong>Note: </strong><i>For simplicity I took the Vgg feature map from 7th layer.</i>
+<strong>Note: </strong><i>I took i=4 and j=5.</i>
   
 <h1>Result :</h1> 
 <p>The images in the following example are quite large.For better view click on the images to view it at its actual size</p>
 <p>For every images the upper one is generated from the <strong>Bicubic InterPolation</strong> and lower one is generated from <strong>SRGAN model</strong>.</p>
+<br>
+<p>BICUBIC</p>
+<img src="result/batman_bicubic.png">
+<p>SRGAN </p>
+<img src="result/batman_hr.png">
+<p>BICUBIC</p>
+<img src="result/aleta_bicubic.png">
+<p>SRGAN</p>
+<img src="result/aleta_hr.png">
+<p>BICUBIC</p>
+<img src="result/leopard_bicubic.png">
+<p>SRGAN</p>
+<img src="result/leopard_hr.png">
+<p>BICUBIC</p>
+<img src="result/batman2_bicubi.png">
+<p>SRGAN</p>
+<img src="result/batman2_hr.png">
 
 
 <h1>Appendix :</h1>
