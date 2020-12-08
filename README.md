@@ -102,7 +102,12 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 </ul>
 <h5>Refrence </h5>
 <p>[1] Christian Ledig, Lucas Theis, Ferenc Huszar, Jose Caballero, Andrew Cunningham, Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz, Zehan Wang, Wenzhe Shi. Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network.</p><br>
+<p>[2]<a href="https://www.kaggle.com/jessicali9530/celeba-dataset">CelebFaces Attributes Dataset</a></p>
+<br>
+<p>[3] Coco dataset</p>
 
+<h5>Note</h5>
+<strong><i>For pretrained weight <a href="https://www.linkedin.com/in/prince-arya-a803a7180/">Contact me</a>
   
 
 
