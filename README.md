@@ -1,14 +1,14 @@
 # Image-Super-Resolution-Using-a-Generative-Adversarial-Network
 
 <h1>Content:</h1>
-<h3>1. Objective</h3>
-<h3>2. Overview</h3>
-<h3>3. Model Architecture</h3>
-<h3>4. Loss Function</h3>
-<h3>5. Result</h3>
-<h3>6. Appendix</h3>
+<a href="#obj" >1. Objective</a><br>
+<a href="#over" >2. Overview</a><br>
+<a href="#model" >3. Model Architecture</a><br>
+<a href="#loss" >4. Loss Function</a><br>
+<a href="#res" >5. Result</a><br>
+<a href="#app" >6. Appendix</a><br>
 <hr>
-<h1>1. Objective:</h1>
+<h1 id="obj">1. Objective:</h1>
 
 <strong>The main objective of this project is to estimate a high-resolution, super-
 resolved image from a low-resolution input image
@@ -19,7 +19,7 @@ Since it is emphasized in the paper that SRRESNET produces the less realistic
 and overly smooth image Compare to SRGAN so I focus mainly on implemanting SRGAN
 instead of SRRESNET.
 
-<h1>2. Overview: </h1>
+<h1 id="over">2. Overview: </h1>
 
 <ul>
   <li>For training purpose I used CELEBA dataset and COCO dataset
@@ -34,7 +34,7 @@ instead of SRRESNET.
   <li>I used Adam optimizer with intial learning rate = 0.0001 and change(reduce) it manually during training phase</li>
 </ul>  
 
-<h1>3. Model Architecture:</h1>
+<h1 id="model">3. Model Architecture:</h1>
 The generator and Discriminator Network used in this project is taken from <i>Goodfellow's Idea</i>:
 
 <h4> Generator Network Architecture </h4>
@@ -59,7 +59,7 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <i>Activation function: Leaky Relu.</i><br>
 <i>Output: Probablity that  input image is original high resolution image</i>
 
-<h1>4. Loss Function:</h1>
+<h1 id="loss">4. Loss Function:</h1>
 <i>I did some changes in loss function due to which the model was generating promisinng result on very less number of epoch</i><br>
 <p>The total loss function comprises of Discriminator loss function and generator loss function</p><br>
 <h5>Discriminator Loss Function: </h5>
@@ -68,7 +68,7 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <img src="image/gen_loss.jpg">
 <strong>Note: </strong><i>I took i=4 and j=5.</i>
   
-<h1>Result :</h1> 
+<h1 id="res">Result :</h1> 
 <p>The images in the following example are quite large.For better view click on the images to view it at its actual size</p>
 <p>For every images the upper one is generated from the <strong>Bicubic InterPolation</strong> and lower one is generated from <strong>SRGAN model</strong>.</p>
 <br>
@@ -90,7 +90,7 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <img src="result/batman2_hr.png">
 
 
-<h1>Appendix :</h1>
+<h1 id="app">Appendix :</h1>
 <h5>Abbriviation used</h5>
 <ul>
   <li>C : <i>Number of channels  in Input Image</i></li>
