@@ -107,9 +107,7 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <br>
 <p>[3] Coco dataset</p>
 
-<h5>Note</h5>
-<strong><i>For pretrained weight <a href="https://www.linkedin.com/in/prince-arya-a803a7180/">Contact me</a>
-  
+
 
 
 
