@@ -60,7 +60,6 @@ It rearrange the Tensor of shape (N,C,H,W) into (N,C/r*r,H*r,W*r) where r is the
 <i>Output: Probablity that  input image is original high resolution image</i>
 
 <h1 id="loss">4. Loss Function:</h1>
-<i>I did some changes in loss function due to which the model was generating promisinng result on very less number of epoch</i><br>
 <p>The total loss function comprises of Discriminator loss function and generator loss function</p><br>
 <h5>Discriminator Loss Function: </h5>
 <img src="image/disc_loss.jpg">
